@@ -6,7 +6,7 @@ import { Link ,Redirect} from 'react-router-dom';
     const [about, setAbout] = useState(aboutContent);
     
     const checkToken = localStorage.getItem ( 'my-token' );
-     const chekout=async()=>{
+     const about =async()=>{
         const optionsLogout = {
             method: 'POST',
             headers: 
@@ -18,6 +18,7 @@ import { Link ,Redirect} from 'react-router-dom';
         const respuesta = await fetch("https://redis-auth.herokuapp.com/auth/logout", optionsLogout );
         
         const datos = await respuesta.json();
+        console.log();
      
      }
     //  const logout=()=>{

@@ -32,19 +32,19 @@ const answStatus = 0;
         
    ( userValues.fullname === "" && errors.push("fullname") );
 
-   ( userValues.fullname === "" && alert("Fullname field cannot be empty") );
+   ( userValues.fullname === "" && alert("El campo de nombre completo no puede estar vacío") );
 
    ( userValues.email === "" && errors.push("email") );
 
-   ( userValues.email === "" && alert("Email field cannot be empty") );
+   ( userValues.email === "" && alert("El campo de correo electrónico no puede estar vacío") );
 
-   (userValues.password.length < 5 && alert("Invalid Password. Minimum of 5 characters required.") );
+   (userValues.password.length < 5 && alert("Contraseña invalida. Se requiere un mínimo de 5 caracteres.") );
    
-   (userValues.password.length < 5 && errors.push("password length invalid") );
+   (userValues.password.length < 5 && errors.push("longitud de la contraseña no válida") );
    
    (userValues.password !== userValues.confirmpass && errors.push("password") );
 
-   (userValues.password !== userValues.confirmpass && alert("The passwords do not match") );
+   (userValues.password !== userValues.confirmpass && alert("las contraseñas no coinciden ") );
     const data = JSON.stringify( userValues );
    
    
